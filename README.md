@@ -4,5 +4,5 @@
 01. 웹 서버 배포
 02. AWS S3 / DynamoDB 백엔드
 03. LifeCycle Precondition
-    01. Lifecycle (non function)
-    02. Lifecycle (use function)
+    01. non function
+    02. use function
