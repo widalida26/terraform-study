@@ -9,7 +9,7 @@ terraform {
 
   backend "s3" {
     bucket         = "tf-backend-bucket-230708"
-    key            = "w02_01/terraform.tfstate"
+    key            = "w02_03/terraform.tfstate"
     region         = "ap-northeast-2"
     dynamodb_table = "terraform-locks"
   }
