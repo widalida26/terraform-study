@@ -5,6 +5,7 @@
 ├── 01 # EC2 웹 서버 배포
 ├── 02 # AWS S3/DynamoDB 백엔드 && 백엔드 테스트
 ├── 03 # lifecycle - precondition
+├── 03 # lifecycle - precondition
 └── 04 # Terraform 공식 문서 예제
 ```
 ## 2주차 (week_02)
