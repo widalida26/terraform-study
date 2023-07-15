@@ -8,4 +8,3 @@ resource "aws_subnet" "public_subnet" {
         Name = "${var.prefix}-public-subnet-${substr(data.aws_availability_zones.available_azs.names[count.index], -1, 0)}"
     }
 }
-
