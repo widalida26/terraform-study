@@ -4,6 +4,7 @@ resource "aws_instance" "apache_web_server" {
   instance_type          = var.instance_type
   vpc_security_group_ids = [aws_security_group.web_sg.id]
   key_name               = aws_key_pair.apache_web_key_pair.key_name
+
   user_data = templatefile("./template/apache_install.tpl", {
     nickname = var.nickname
   })
