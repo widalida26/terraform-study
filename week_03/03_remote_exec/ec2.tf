@@ -17,7 +17,7 @@ resource "aws_eip" "web_server_eip" {
   instance = aws_instance.web_server.id
 }
 
-resource "null_resource" "code_deploy_agent_install" {
+resource "null_resource" "stop_web_server" {
   provisioner "remote-exec" {
     connection {
       host = aws_eip.web_server_eip.public_ip
