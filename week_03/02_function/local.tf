@@ -3,7 +3,7 @@ locals {
     env = var.environment
   }
 
-  vpc_name_tag = merge(local.default_tags, {
+  vpc_tag = merge(local.default_tags, {
     Name = format(
       "%s-%s-%s-vpc",
       var.company,
