@@ -9,5 +9,5 @@ resource "local_file" "a" {
 # }
 
 output "file_content" {
-    value = local_file.a.content
+    value = local_file.b.content
 }
