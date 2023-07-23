@@ -38,4 +38,5 @@ Footer navigation
 
 # etc
 keypair/*
+keypair/*.pem
 *.pem
