@@ -3,8 +3,15 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = ">= 5.0, <=5.6.2"
+      version = ">= 5.0, <=5.6"
     }
+  }
+
+  backend "s3" {
+    bucket         = "wdb-t101study-tfstate"
+    key            = "w04_01/terraform.tfstate"
+    region         = "ap-northeast-2"
+    dynamodb_table = "terraform-locks"
   }
 }
 

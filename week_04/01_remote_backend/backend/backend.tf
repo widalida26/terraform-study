@@ -14,18 +14,18 @@ output "s3_bucket_arn" {
   description = "The ARN of the S3 bucket"
 }
 
-# resource "aws_dynamodb_table" "ddb_backend_table" {
-#   name         = "terraform-locks"
-#   billing_mode = "PAY_PER_REQUEST"
-#   hash_key     = "LockID"
+resource "aws_dynamodb_table" "ddb_backend_table" {
+  name         = "terraform-locks"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "LockID"
 
-#   attribute {
-#     name = "LockID"
-#     type = "S"
-#   }
-# }
+  attribute {
+    name = "LockID"
+    type = "S"
+  }
+}
 
-# output "dynamodb_table_name" {
-#   value       = aws_dynamodb_table.ddb_backend_table.name
-#   description = "The name of the DynamoDB table"
-# }
+output "dynamodb_table_name" {
+  value       = aws_dynamodb_table.ddb_backend_table.name
+  description = "The name of the DynamoDB table"
+}
