@@ -4,6 +4,6 @@ resource "aws_vpc" "test_vpc" {
   enable_dns_hostnames = true
 
   tags = {
-    Name = "t101-study"
+    Name = "${prefix}-vpc"
   }
 }
