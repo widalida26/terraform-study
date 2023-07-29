@@ -3,7 +3,7 @@
 ## 1주차 (week_01)
 ```bash
 ├── 01 # EC2 웹 서버 배포
-├── 02 # AWS S3/DynamoDB 백엔드 && 백엔드 테스트
+├── 02 # AWS S3 백엔드 && 백엔드 테스트
 ├── 03 # lifecycle - precondition
 ├── 03 # lifecycle - precondition
 └── 04 # Terraform 공식 문서 예제
@@ -23,5 +23,12 @@
 ├── 03 # remote-exec 사용하기
 └── 04 # trigger_replace 사용하기
 └── 05 # moved 블록 사용하기
-└── 05 # provider alias 사용하기 - 두 개의 리전에 버킷 배포
+└── 06 # provider alias 사용하기 - 두 개의 리전에 버킷 배포
+```
+## 4주차 (week_04)
+```bash
+├── 01 # 원격저장소 사용하기 - AWS S3
+├── 02 # 모듈화하기 - Security Group
+├── 03 # 공개 모듈 사용하기
+└── 04 # 모듈 소스 지정하기
 ```
